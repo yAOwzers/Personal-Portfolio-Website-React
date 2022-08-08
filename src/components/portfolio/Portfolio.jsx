@@ -2,11 +2,10 @@ import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 import {
-  featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
+  workExperiencePortfolio,
+  softwarePortfolio,
+  hardwarePortfolio,
+  uiPortfolio
 } from "../../data";
 
 export default function Portfolio() {
@@ -14,46 +13,39 @@ export default function Portfolio() {
   const [data, setData] = useState([]);
   const list = [
     {
-      id: "featured",
-      title: "Featured",
+      id: "work-experience",
+      title: "Work Experience",
     },
     {
-      id: "web",
-      title: "Web App",
+      id: "software",
+      title: "Software",
     },
     {
-      id: "mobile",
-      title: "Mobile App",
+      id: "hardware",
+      title: "Hardware",
     },
     {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
-    },
+      id: "ui",
+      title: "UI/UX",
+    }
   ];
 
   useEffect(() => {
     switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
+      case "work-experience":
+        setData(workExperiencePortfolio);
         break;
-      case "web":
-        setData(webPortfolio);
+      case "software":
+        setData(softwarePortfolio);
         break;
-      case "mobile":
-        setData(mobilePortfolio);
+      case "hardware":
+        setData(hardwarePortfolio);
         break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
+      case "ui":
+        setData(uiPortfolio);
         break;
       default:
-        setData(featuredPortfolio);
+        setData(workExperiencePortfolio);
     }
   }, [selected]);
 

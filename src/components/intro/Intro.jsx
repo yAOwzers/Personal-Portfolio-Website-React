@@ -10,7 +10,7 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed:60,
-      strings: ["Developer", "Designer", "Content Creator"],
+      strings: ["Software Engineering", "Business and Finance", "Social Services"],
     });
   }, []);
 
@@ -18,15 +18,17 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/man.png" alt="" />
+          <img src="assets/Joel_bg_transparent.png" alt="" />
         </div>
       </div>
       <div className="right">
         <div className="wrapper">
           <h2>Hi There, I'm</h2>
-          <h1>Safak Kocaoglu</h1>
+          <h1>Joel Neo</h1>
           <h3>
-            Freelance <span ref={textRef}></span>
+            NUS Computer Engineer Undergraduate
+            <br></br>
+            with a passion for <span ref={textRef}></span>
           </h3>
         </div>
         <a href="#portfolio">

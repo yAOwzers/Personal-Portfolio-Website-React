@@ -6,31 +6,31 @@ export default function Works() {
   const data = [
     {
       id: "1",
-      icon: "./assets/mobile.png",
-      title: "Web Design",
+      icon: "./assets/globe.png",
+      title: "JiaK",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "During the pandemic, a group of friends and I wanted to help HomeBakers accelerate their business growth by creating a marketplace for Home Goods.",
       img:
-        "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+        "./assets/jiak.png",
     },
     {
       id: "2",
       icon: "./assets/globe.png",
-      title: "Mobile Application",
+      title: "High-Speed Electric Vertical Takeoff and Landing",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "For a design project targeted to solve the logistic issue in Norway, my team worked on an E-VTOL Drone that carries packages. ",
       img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+        "./assets/evtol.png",
     },
     {
       id: "3",
-      icon: "./assets/writing.png",
-      title: "Branding",
+      icon: "./assets/globe.png",
+      title: "EngiNavigator",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "A friend and me wanted to help students in Engineering navigate their way through the campus. We created a simple web application to find the shortest route between two places.",
       img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-    },
+        "./assets/cp2106.png",
+    }
   ];
 
   const handleClick = (way) => {
@@ -60,7 +60,7 @@ export default function Works() {
               </div>
               <div className="right">
                 <img
-                  src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
+                  src={d.img}
                   alt=""
                 />
               </div>
