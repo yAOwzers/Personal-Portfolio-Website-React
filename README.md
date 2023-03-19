@@ -1,6 +1,16 @@
+# Versions
+Use node version 12.22.6
+Use nvm to install the specific version of node, and nvm use to use that version
+
+```
+nvm install 12.22.6
+```
+
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Install Dependencies
+
+Run `npm install` to install the dependencies
 
 ## Available Scripts
 
